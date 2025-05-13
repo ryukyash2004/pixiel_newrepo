@@ -3,8 +3,8 @@
 /* CSS Variables for Retro Theme */
 :root {
     /* NES-inspired color palette */
-    --color-bg: #000000;
-    --color-text: #ffffff;
+    --color-bg: #90caf9;  /* Light blue color */
+    --color-text: #000000;  /* Changed to black for better contrast on light background */
     --color-primary: #7c7c7c;
     --color-secondary: #fcce7b;
     --color-accent: #ff6b6b;
@@ -39,15 +39,14 @@ html {
 
 body {
     font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
-    background-color: var(--color-bg);
+    background: linear-gradient(to bottom, 
+        #90caf9 75%,  /* Light blue for top 75% */
+        #66bb6a 75%   /* Grassy green for bottom 25% */
+    );
     color: var(--color-text);
     line-height: 1.6;
     padding: var(--spacing-md);
-    background-image: url('../images/bg-pixel.png.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    image-rendering: pixelated;
+    min-height: 100vh;
 }
 
 /* Typography */
