@@ -165,6 +165,18 @@ a:hover {
     text-align: center;
 }
 
+.certificate-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto var(--spacing-md) auto;
+    border: var(--border-width) var(--border-style) var(--border-color);
+    background: #fff;
+    object-fit: contain;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
 /* Contact Form */
 .contact-form {
     max-width: 600px;
