@@ -296,4 +296,116 @@ a:hover {
     margin: 0 auto;
     max-width: 800px;
     padding: 0 var(--spacing-md);
+}
+
+/* Social Icons */
+.social-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+    padding-left: var(--spacing-xl);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-3px);
+}
+
+.social-card span {
+    display: none;  /* Hide the text labels */
+}
+
+/* Social Links Section */
+.social-links-section {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    background-color: var(--color-bg);
+}
+
+.social-links-section h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Footer */
+footer {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) 0;
+    border-top: var(--border-width) var(--border-style) var(--border-color);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 var(--spacing-md);
+}
+
+.footer-content .social-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    padding-left: 0;
+}
+
+.footer-content .social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-sm);
+    border: var(--border-width) var(--border-style) transparent;
+    transition: all 0.3s ease;
+    margin-left: 0;
+}
+
+.footer-content .social-card:hover {
+    border-color: var(--border-color);
+    transform: translateY(-2px);
+}
+
+.footer-content .social-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-content .social-card span {
+    font-size: 0.8rem;
+}
+
+.footer-content p {
+    margin-top: var(--spacing-md);
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content .social-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
 } 
